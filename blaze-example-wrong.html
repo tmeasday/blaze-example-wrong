@@ -1,0 +1,17 @@
+<head>
+  <title>blaze-example-wrong</title>
+</head>
+
+<body>
+  {{> hello}}
+</body>
+
+<template name="hello">
+  {{#with postName='foo'}}
+    {{> post postData}}
+  {{/with}}
+</template>
+
+<template name="foo">
+  {{foo}}
+</template>
